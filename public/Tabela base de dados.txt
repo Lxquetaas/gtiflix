@@ -1,0 +1,37 @@
+Filmes:
+-nome
+-lancamento
+-diretor_id (relacionamento)
+-produtora_id (relacionamento)
+-nacionalidade_id (relacionamento)
+-classificacao indicativa
+-descricao
+-duracao
+-poster
+-capa
+
+Diretores:
+-nome
+-foto
+-descricao
+-nascimento
+-nacionalidade_id (relacionamento)
+
+Atores:
+-nome
+-descricao
+-foto
+-nascimento
+-nacionalidade
+
+Produtoras:
+-nome
+
+Nacionalidades:
+-nome
+
+-nacionalidade(pais)**
+-estudio**
+-atores**
+-genero**
+-diretor**
