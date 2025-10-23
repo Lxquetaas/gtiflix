@@ -6,9 +6,9 @@ use App\Models\Genero;
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
 Route::get('/lucas', function (){
    echo 'Olá Lucas';
@@ -20,8 +20,13 @@ Route::get('/filmes/{filme}', function ($filme){
 
 Route::view('/sobre','sobre');
 
-Route::get('/lista-filmes', function() {
+Route::get('/', function() {
     $filmes = Filme::all();
     return view('lista-filmes',
     compact('filmes'));
+});
+Route::get('/detalhes-filme/{filme}',
+ function (Filme $filme){
+return view('detalhes-filme',compact('filme'));
+
 });
