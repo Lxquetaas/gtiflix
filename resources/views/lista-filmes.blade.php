@@ -33,11 +33,9 @@
         </p>
       </div>
       <div class="mt-auto flex border-t border-gray-200 divide-x divide-gray-200 :border-neutral-700 :divide-neutral-700">
-        <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-es-xl bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none :bg-neutral-900 :border-neutral-700 :text-white :hover:bg-neutral-800 :focus:bg-neutral-800" href="#">
-          View sample
-        </a>
-        <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-ee-xl bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none :bg-neutral-900 :border-neutral-700 :text-white :hover:bg-neutral-800 :focus:bg-neutral-800" href="#">
-          View API
+
+        <a class="w-full py-3 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-medium rounded-b-xl bg-white text-gray-800 shadow-2xs hover:bg-gray-50 focus:outline-hidden focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none :bg-neutral-900 :border-neutral-700 :text-white :hover:bg-neutral-800 :focus:bg-neutral-800" href="{{route('detalhes-filme',$filme)}}">
+        Ver Detalhes
         </a>
       </div>
     </div>

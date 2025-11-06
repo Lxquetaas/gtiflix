@@ -3,7 +3,7 @@
 use App\Models\Ator;
 use App\Models\Filme;
 use App\Models\Genero;
-
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 // Route::get('/', function () {
@@ -28,5 +28,12 @@ Route::get('/', function() {
 Route::get('/detalhes-filme/{filme}',
  function (Filme $filme){
 return view('detalhes-filme',compact('filme'));
+ 
 
-});
+})->name('detalhes-filme');
+
+Route::view('/login','login')->name('login');
+
+Route::post('/logar',function (Request $request){
+    dd($request);
+ })->name ('logar');
